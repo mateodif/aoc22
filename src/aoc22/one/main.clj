@@ -2,7 +2,7 @@
   (:require [clojure.string :as str]))
 
 (def input
-  (str/split (slurp "input") #"\n\n"))
+  (str/split (slurp "src/aoc22/one/input") #"\n\n"))
 
 (defn get-calories [coll]
   (->> (str/split coll #"\n")
