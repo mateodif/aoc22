@@ -4,9 +4,7 @@
 
 (declare end-strategy)
 
-(def input
-  (-> (slurp "src/aoc22/two/input")
-      (str/split #"\n")))
+(def input (-> "src/aoc22/two/input" slurp str/split-lines))
 
 (def letter->rps
   {"A" :rock     "X" :rock

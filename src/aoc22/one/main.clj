@@ -1,8 +1,7 @@
 (ns aoc22.one.main
   (:require [clojure.string :as str]))
 
-(def input
-  (str/split (slurp "src/aoc22/one/input") #"\n\n"))
+(def input (-> "src/aoc22/one/input" slurp (str/split #"\n\n")))
 
 (defn get-calories [coll]
   (->> (str/split coll #"\n")
