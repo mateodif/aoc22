@@ -1,9 +1,9 @@
-(ns aoc22.fourth.main
+(ns aoc22.four.main
   (:require
    [clojure.set :refer [subset?]]
    [clojure.string :refer [split-lines split]]))
 
-(def input (-> "src/aoc22/fourth/input" slurp split-lines))
+(def input (-> "src/aoc22/four/input" slurp split-lines))
 
 (defn strs-to-ints [strs]
   (map #(Integer/parseInt %) strs))
